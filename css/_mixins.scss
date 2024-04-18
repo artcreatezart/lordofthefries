@@ -79,6 +79,12 @@
             .menu-header {
                 width: 100%;
 
+                .menu-header-container {
+                    .menu-header-logo {
+                        padding: 10px;
+                    }
+                }
+
                 h5 {
                     flex-direction: column;
                     justify-content: center;

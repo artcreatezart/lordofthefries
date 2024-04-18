@@ -48,7 +48,7 @@
 
         // CALL TO ACTION - HOME BUTTON THEME
         .bottom-buttons {
-            
+
             a {
                 border-radius: 8px;
                 font-size: 1.8em;
@@ -97,6 +97,7 @@
                 a {
                     color: $tertiary-color;
                 }
+
                 #burgerMenu {
                     background-color: $secondary-color;
                     color: $primary-color;
@@ -207,26 +208,29 @@
 
         }
 
-        
+
 
     }
 
     // ITEM ADDDED TO CART OVERLAY LAYOUT
     .added-cart {
         background-color: $red-overlay-background;
+
         .added-cart-container {
             background-color: $primary-color;
             border-radius: 8px;
+
             .added-cart-left-icon {
                 background-image: url(/img/one-cart-fries.svg);
                 background-position: center;
                 background-size: cover;
             }
+
             .added-cart-right-text {
                 font-size: 2em;
             }
         }
-        
+
     }
 
 
@@ -241,11 +245,14 @@
         .order-process-card {
             background-color: $primary-color;
             box-shadow: 5px 5px 24px #f0f0f0,
-            -5px -5px 24px #ffffff;
+                -5px -5px 24px #ffffff;
             border-radius: 8px;
             color: $tertiary-color;
 
-            .fa-utensils, .fa-bag-shopping, .fa-money-bill, .fa-credit-card{
+            .fa-utensils,
+            .fa-bag-shopping,
+            .fa-money-bill,
+            .fa-credit-card {
                 color: $secondary-color;
                 font-size: 8em;
             }
@@ -261,12 +268,12 @@
 .table-page {
 
     .table-page-content {
-        
+
         input {
             border: 3px solid rgb(189, 189, 189);
             border-radius: 8px;
             box-shadow: inset 27px 27px 44px #ededed,
-            inset -27px -27px 44px #ffffff;
+                inset -27px -27px 44px #ffffff;
         }
     }
 }
@@ -293,31 +300,32 @@
     a {
         .enjoy-page-content {
             background-color: $red-overlay-background;
-    
+
             //  HEADER THEME
             .header {
                 h1 {
                     font-size: 2.5em;
                     color: $primary-color;
                 }
+
                 h4 {
                     color: $primary-color;
                     font-weight: $font-weight-semibold;
                 }
             }
-    
+
             // WAIT TIME THEME
             .wait-time-block {
                 background-color: $primary-color;
                 border-radius: 8px;
-    
+
                 h5 {
                     font-size: 2em;
                     font-weight: $font-weight-bold;
                 }
             }
-    
+
         }
     }
-    
+
 }

@@ -31,7 +31,7 @@
 
             width: 80px;
             height: 80px;
-            background-image: url(/img/original.webp);
+            background-image: url(../img/original.webp);
             background-position: center;
             background-size: cover;
         }
@@ -67,6 +67,7 @@
 
     h6 {
         text-transform: uppercase;
+        text-align: center;
     }
 
     .left-bottom-navigation,
@@ -90,26 +91,6 @@
             justify-content: flex-end;
             align-items: center;
             margin-right: 2%;
-
-            .empty-cart-icon,
-            .one-cart-icon {
-                width: 21%;
-                height: 100%;
-                margin-right: 2%;
-            }
-
-            .empty-cart-icon {
-                background-image: url(/img/cart-fries.svg);
-                background-position: center;
-                background-size: cover;
-            }
-            
-            .one-cart-icon {
-                background-image: url(/img/one-cart-fries.svg);
-                background-position: center;
-                background-size: cover;
-            }
-
 
         }
     }

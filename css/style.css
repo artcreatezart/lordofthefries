@@ -37,6 +37,9 @@
   .menu-page .right-menu-container .menu-header {
     width: 100%;
   }
+  .menu-page .right-menu-container .menu-header .menu-header-container .menu-header-logo {
+    padding: 10px;
+  }
   .menu-page .right-menu-container .menu-header h5 {
     flex-direction: column;
     justify-content: center;
@@ -89,6 +92,9 @@
   }
   .menu-page .right-menu-container .menu-header {
     width: 100%;
+  }
+  .menu-page .right-menu-container .menu-header .menu-header-container .menu-header-logo {
+    padding: 10px;
   }
   .menu-page .right-menu-container .menu-header h5 {
     flex-direction: column;
@@ -191,6 +197,9 @@ h6 {
   }
   .menu-page .right-menu-container .menu-header {
     width: 100%;
+  }
+  .menu-page .right-menu-container .menu-header .menu-header-container .menu-header-logo {
+    padding: 10px;
   }
   .menu-page .right-menu-container .menu-header h5 {
     flex-direction: column;
@@ -311,6 +320,7 @@ h6 {
 .menu-page .right-menu-container .menu-header .menu-header-container .menu-header-logo {
   width: 23%;
   height: 90%;
+  padding: 5px;
 }
 .menu-page .right-menu-container .menu-header .menu-header-container .menu-header-logo .menu-logo-img {
   width: 100%;
@@ -350,7 +360,9 @@ h6 {
   width: 100%;
   height: 100%;
 }
-.menu-page .right-menu-container .burger-menu .burger-content .mock-burger, .menu-page .right-menu-container .burger-menu .burger-content .chick-burger, .menu-page .right-menu-container .burger-menu .burger-content .vege-burger {
+.menu-page .right-menu-container .burger-menu .burger-content .mock-burger,
+.menu-page .right-menu-container .burger-menu .burger-content .chick-burger,
+.menu-page .right-menu-container .burger-menu .burger-content .vege-burger {
   width: 100%;
   height: 100%;
   display: flex;
@@ -536,6 +548,9 @@ h6 {
   .menu-page .right-menu-container .menu-header {
     width: 100%;
   }
+  .menu-page .right-menu-container .menu-header .menu-header-container .menu-header-logo {
+    padding: 10px;
+  }
   .menu-page .right-menu-container .menu-header h5 {
     flex-direction: column;
     justify-content: center;
@@ -577,7 +592,7 @@ h6 {
 .item-grid .menu-content-card .menu-content-card-img {
   width: 80px;
   height: 80px;
-  background-image: url(/img/original.webp);
+  background-image: url(../img/original.webp);
   background-position: center;
   background-size: cover;
 }
@@ -606,6 +621,7 @@ h6 {
 }
 .bottom-navigation h6 {
   text-transform: uppercase;
+  text-align: center;
 }
 .bottom-navigation .left-bottom-navigation,
 .bottom-navigation .right-bottom-navigation {
@@ -627,22 +643,6 @@ h6 {
   justify-content: flex-end;
   align-items: center;
   margin-right: 2%;
-}
-.bottom-navigation .right-bottom-navigation .right-bottom-navigation-cart .empty-cart-icon,
-.bottom-navigation .right-bottom-navigation .right-bottom-navigation-cart .one-cart-icon {
-  width: 21%;
-  height: 100%;
-  margin-right: 2%;
-}
-.bottom-navigation .right-bottom-navigation .right-bottom-navigation-cart .empty-cart-icon {
-  background-image: url(/img/cart-fries.svg);
-  background-position: center;
-  background-size: cover;
-}
-.bottom-navigation .right-bottom-navigation .right-bottom-navigation-cart .one-cart-icon {
-  background-image: url(/img/one-cart-fries.svg);
-  background-position: center;
-  background-size: cover;
 }
 
 @media screen and (min-width: 992px) {
@@ -682,6 +682,9 @@ h6 {
   }
   .menu-page .right-menu-container .menu-header {
     width: 100%;
+  }
+  .menu-page .right-menu-container .menu-header .menu-header-container .menu-header-logo {
+    padding: 10px;
   }
   .menu-page .right-menu-container .menu-header h5 {
     flex-direction: column;
@@ -735,6 +738,9 @@ h6 {
   }
   .menu-page .right-menu-container .menu-header {
     width: 100%;
+  }
+  .menu-page .right-menu-container .menu-header .menu-header-container .menu-header-logo {
+    padding: 10px;
   }
   .menu-page .right-menu-container .menu-header h5 {
     flex-direction: column;
@@ -814,6 +820,9 @@ h6 {
   }
   .menu-page .right-menu-container .menu-header {
     width: 100%;
+  }
+  .menu-page .right-menu-container .menu-header .menu-header-container .menu-header-logo {
+    padding: 10px;
   }
   .menu-page .right-menu-container .menu-header h5 {
     flex-direction: column;
@@ -968,7 +977,10 @@ h6 {
   border-radius: 8px;
   color: #000000;
 }
-.order-process-page .order-process-content .order-process-card .fa-utensils, .order-process-page .order-process-content .order-process-card .fa-bag-shopping, .order-process-page .order-process-content .order-process-card .fa-money-bill, .order-process-page .order-process-content .order-process-card .fa-credit-card {
+.order-process-page .order-process-content .order-process-card .fa-utensils,
+.order-process-page .order-process-content .order-process-card .fa-bag-shopping,
+.order-process-page .order-process-content .order-process-card .fa-money-bill,
+.order-process-page .order-process-content .order-process-card .fa-credit-card {
   color: #C4161C;
   font-size: 8em;
 }
@@ -1045,6 +1057,9 @@ h6 {
   }
   .menu-page .right-menu-container .menu-header {
     width: 100%;
+  }
+  .menu-page .right-menu-container .menu-header .menu-header-container .menu-header-logo {
+    padding: 10px;
   }
   .menu-page .right-menu-container .menu-header h5 {
     flex-direction: column;

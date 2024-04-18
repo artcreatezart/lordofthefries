@@ -1,0 +1,402 @@
+// layout - Flex, padding, margin, justify content, align items etc
+
+// Mixings
+@import 'mixins';
+
+// HOME LANDING PAGE LAYOUT STARTS
+.home-page {
+    width: 100vw;
+    height: 100vh;
+
+    .home-page-content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .header {
+            width: 70%;
+            height: 40%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+
+            .hero-logo {
+                width: 100%;
+                height: 100%;
+                margin-bottom: 10px;
+
+
+                .hero-logo-img {
+                    width: 100%;
+                    height: 100%;
+                }
+
+            }
+        }
+
+
+        .wait-time-block {
+            padding: 10px;
+            margin-bottom: 40px;
+        }
+
+        .bottom-buttons {
+            width: 70%;
+            height: 20%;
+            display: flex;
+            justify-content: space-between;
+
+            a {
+                width: 35%;
+                height: 100%;
+                display: flex;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+
+
+            }
+        }
+
+
+
+    }
+}
+
+// HOME LANDING PAGE LAYOUT ENDS
+
+// MENU PAGE LAYOUT STARTS
+
+// Side Navigation layout
+
+.menu-page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: $background-color;
+
+    .main-navigation {
+        height: 100%;
+        width: 21%;
+        position: fixed;
+
+        .main-navigation-menu-links {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+
+            li {
+                padding: 4px;
+                height: 100%;
+            }
+
+            #burgerMenu {
+                padding: 4px;
+            }
+        }
+    }
+
+    .right-menu-container {
+        width: 90%;
+        height: 100%;
+        margin-left: 170px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+
+        .menu-header {
+            width: 80%;
+            height: 20%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            padding-bottom: 3px;
+
+            .menu-header-container {
+                height: 80%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                padding: 15px;
+                z-index: 10;
+
+                .menu-header-logo {
+                    width: 23%;
+                    height: 90%;
+
+                    .menu-logo-img {
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                }
+
+                h6 {
+                    width: 70%;
+                }
+            }
+
+            h5 {
+                width: 100%;
+                gap: 5px;
+                padding: 5px;
+                display: flex;
+                align-self: center;
+                justify-content: center;
+            }
+
+
+        }
+
+        .burger-menu {
+            display: flex;
+            width: 80%;
+            flex-direction: column;
+
+            .sub-navigation-link {
+                width: 100%;
+                position: fixed;
+                margin-top: 100px;
+                padding: 10px;
+
+                ul {
+                    display: flex;
+                    gap: 20px;
+
+                }
+
+            }
+
+            .burger-content {
+                margin-top: 160px;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                width: 100%;
+                height: 100%;
+
+                .mock-burger, .chick-burger, .vege-burger {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+
+
+                }
+                
+                .vege-burger {
+                    margin-bottom: 100px;
+                }
+            }
+
+        }
+
+        .bottom-navigation {
+            width: 79%;
+
+            .right-bottom-navigation {
+
+                .right-bottom-navigation-cart {
+                    #addPrice {
+                        display: none;
+                    }
+
+                    // #oneIcon {
+                    //     // display: none;
+                    // }
+
+                    .empty-cart-icon, 
+                    .one-cart-icon {
+                        width: 40px;
+                        height: 45px;
+                    }
+
+                    .one-cart-icon {
+                        display: none;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    // ITEM ADDDED TO CART OVERLAY LAYOUT
+    .added-cart {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        display: none;
+        justify-content: center;
+        align-items: center;
+
+        .added-cart-container {
+            width: 90%;
+            height: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            .added-cart-left-icon {
+                width: 40%;
+                height: 70%;
+            }
+        }
+
+    }
+}
+
+// CART PAGE LAYOUT STARTS
+
+.cart-page {
+    width: 100vw;
+    height: 100vh;
+
+    .cart-content {
+        padding: 30px;
+
+        .item-grid {
+            .menu-content-card {
+                .menu-content-card-bottom {
+                    display: flex;
+
+                    .fa-trash-can {
+                        margin-left: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// DINE IN PAGE LAYOUT STARTS
+
+.order-process-page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .order-process-content {
+        width: 80%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+
+        .order-process-card {
+            width: 40%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+
+
+
+        }
+    }
+
+}
+
+// TABLE PAGE LAYOUT STARTS
+
+.table-page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .table-page-content {
+        width: 80%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        input {
+            width: 50%;
+            height: 20%;
+
+        }
+    }
+}
+
+// Payment PAGE LAYOUT STARTS
+
+.payment-screen-page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        .payment-screen-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .fa-arrow-down {
+                font-size: 15em;
+                color: $secondary-color;
+            }
+        }
+    }
+
+
+}
+
+// Enjoy PAGE LAYOUT STARTS
+
+
+.enjoy-page {
+    width: 100vw;
+    height: 100vh;
+
+    .enjoy-page-content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .header {
+            width: 70%;
+            height: 40%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+
+        .wait-time-block {
+            padding: 15px;
+            margin-bottom: 40px;
+        }
+
+
+
+    }
+}

@@ -1,0 +1,323 @@
+// Styling, colour, font etc
+
+// Mixins
+@import 'mixins';
+
+// INDEX - HOME PAGE STYLING STARTS
+
+.home-page {
+    background-image: url(../img/heroimg.webp);
+    background-position: center;
+    background-size: cover;
+
+    .home-page-content {
+        background-color: $red-overlay-background;
+
+        //  HEADER THEME
+        .header {
+            .hero-logo {
+                background-color: $white-overlay-background;
+                border-radius: 8px;
+
+                .hero-logo-img {
+                    background-image: url(../img/loft-logo.png);
+                    background-position: center;
+                    background-size: cover;
+                }
+
+            }
+
+            .hero-logo-quote {
+                h4 {
+                    color: $primary-color;
+                    font-weight: $font-weight-semibold;
+                }
+
+            }
+        }
+
+        // WAIT TIME THEME
+        .wait-time-block {
+            background-color: $white-overlay-background;
+            border-radius: 8px;
+
+            h5 {
+                font-weight: $font-weight-bold;
+            }
+        }
+
+        // CALL TO ACTION - HOME BUTTON THEME
+        .bottom-buttons {
+            
+            a {
+                border-radius: 8px;
+                font-size: 1.8em;
+                font-weight: $font-weight-bold;
+                padding: 10px;
+                border: 0;
+            }
+
+            .red-home-btn {
+                background-color: $secondary-color;
+                color: $primary-color;
+            }
+
+            .white-home-btn {
+                background-color: $primary-color;
+                color: $tertiary-color;
+            }
+
+
+        }
+
+    }
+}
+
+
+// INDEX - HOME PAGE STYLING ENDS
+
+// MENU PAGE LAYOUT STARTS
+
+// Side Navigation layout
+
+.menu-page {
+    background-color: $background-color;
+
+
+    .main-navigation {
+        background-color: $primary-color;
+        box-shadow: 5px 5px 24px #f0f0f0,
+            -5px -5px 24px #ffffff;
+
+        .main-navigation-menu-links {
+            font-size: 1.3em;
+            font-weight: $font-weight-semibold;
+
+            li {
+                a {
+                    color: $tertiary-color;
+                }
+                #burgerMenu {
+                    background-color: $secondary-color;
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+
+
+    .right-menu-container {
+
+        .menu-header {
+            .menu-header-container {
+                background-color: $secondary-color;
+
+                .menu-header-logo {
+                    background-color: $primary-color;
+                    border-radius: 8px;
+
+                    .menu-logo-img {
+                        background-image: url(../img/loft-logo.png);
+                        background-position: center;
+                        background-size: cover;
+                    }
+                }
+
+                .fa-leaf {
+                    font-size: 2.4em;
+                    color: $accent-color;
+                }
+
+                h6 {
+                    color: $primary-color;
+                }
+            }
+
+            h5 {
+                background-color: $primary-color;
+
+                .sub-navigation-header-green {
+                    color: $accent-color;
+                }
+            }
+
+        }
+
+
+
+        .burger-menu {
+            display: flex;
+            width: 80%;
+            flex-direction: column;
+
+            .sub-navigation-link {
+                background-color: $primary-color;
+
+                ul {
+                    list-style-type: none;
+
+                    li {
+
+                        a {
+                            font-weight: $font-weight-bold;
+                            color: $tertiary-color;
+                            text-decoration: underline;
+                        }
+                    }
+
+                }
+
+            }
+
+
+            .burger-content {
+
+
+                .mock-burger {
+
+
+                    .mock-burger-grid {
+
+
+                        .menu-content-card {
+                            background-color: $primary-color;
+                        }
+
+                        .menu-content-card:nth-child(1) {
+                            .menu-content-card-img {
+                                background-image: url(/img/original.webp);
+                                background-position: center;
+                                background-size: cover;
+                            }
+                        }
+
+                        .menu-content-card:nth-child(2) {
+                            .menu-content-card-img {
+                                background-image: url(/img/original.webp);
+                                background-position: center;
+                                background-size: cover;
+                            }
+                        }
+                    }
+
+
+
+                }
+            }
+
+        }
+
+        
+
+    }
+
+    // ITEM ADDDED TO CART OVERLAY LAYOUT
+    .added-cart {
+        background-color: $red-overlay-background;
+        .added-cart-container {
+            background-color: $primary-color;
+            border-radius: 8px;
+            .added-cart-left-icon {
+                background-image: url(/img/one-cart-fries.svg);
+                background-position: center;
+                background-size: cover;
+            }
+            .added-cart-right-text {
+                font-size: 2em;
+            }
+        }
+        
+    }
+
+
+}
+
+// DINE IN PAGE THEME STARTS
+
+.order-process-page {
+
+    .order-process-content {
+
+        .order-process-card {
+            background-color: $primary-color;
+            box-shadow: 5px 5px 24px #f0f0f0,
+            -5px -5px 24px #ffffff;
+            border-radius: 8px;
+            color: $tertiary-color;
+
+            .fa-utensils, .fa-bag-shopping, .fa-money-bill, .fa-credit-card{
+                color: $secondary-color;
+                font-size: 8em;
+            }
+
+        }
+    }
+
+}
+
+
+// TABLE PAGE THEME STARTS
+
+.table-page {
+
+    .table-page-content {
+        
+        input {
+            border: 3px solid rgb(189, 189, 189);
+            border-radius: 8px;
+            box-shadow: inset 27px 27px 44px #ededed,
+            inset -27px -27px 44px #ffffff;
+        }
+    }
+}
+
+// PAYMENT PAGE THEME STARTS
+
+.payment-screen-page {
+
+    .payment-screen-content {
+
+        .fa-arrow-down {
+            color: $secondary-color;
+        }
+    }
+}
+
+// Enjou PAGE THEME STARTS
+
+.enjoy-page {
+    background-image: url(../img/heroimg.webp);
+    background-position: center;
+    background-size: cover;
+
+    a {
+        .enjoy-page-content {
+            background-color: $red-overlay-background;
+    
+            //  HEADER THEME
+            .header {
+                h1 {
+                    font-size: 2.5em;
+                    color: $primary-color;
+                }
+                h4 {
+                    color: $primary-color;
+                    font-weight: $font-weight-semibold;
+                }
+            }
+    
+            // WAIT TIME THEME
+            .wait-time-block {
+                background-color: $primary-color;
+                border-radius: 8px;
+    
+                h5 {
+                    font-size: 2em;
+                    font-weight: $font-weight-bold;
+                }
+            }
+    
+        }
+    }
+    
+}

@@ -1,0 +1,117 @@
+// Module - reusable things items like menu and review cards
+
+// Mixins
+@import 'mixins';
+
+.burger-content {
+    margin-top: 10%;
+    display: flex;
+}
+
+.item-grid {
+    display: grid;
+    justify-content: flex-start;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    height: auto;
+    align-items: center;
+
+    .menu-content-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $primary-color;
+        box-shadow: 5px 5px 24px #f0f0f0,
+            -5px -5px 24px #ffffff;
+        border-radius: 8px;
+        gap: 10px;
+        padding: 10px;
+
+        .menu-content-card-img {
+
+            width: 80px;
+            height: 80px;
+            background-image: url(/img/original.webp);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .menu-content-card-name {
+            align-self: flex-start;
+            text-transform: uppercase;
+        }
+
+        .menu-content-card-price {
+            color: $secondary-color;
+            align-self: flex-start;
+            font-size: 1em;
+
+        }
+    }
+}
+
+
+.bottom-navigation {
+    width: 100%;
+    height: 12%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 1%;
+    background-color: $primary-color;
+    box-shadow: 5px 5px 24px #f0f0f0,
+        -5px -5px 24px #ffffff;
+
+    h6 {
+        text-transform: uppercase;
+    }
+
+    .left-bottom-navigation,
+    .right-bottom-navigation {
+        display: flex;
+        width: 50%;
+        height: 100%;
+        gap: 3%;
+        align-items: center;
+        text-transform: uppercase;
+        font-weight: $font-weight-regular;
+    }
+
+    .right-bottom-navigation {
+        justify-content: flex-end;
+
+        .right-bottom-navigation-cart {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-right: 2%;
+
+            .empty-cart-icon,
+            .one-cart-icon {
+                width: 21%;
+                height: 100%;
+                margin-right: 2%;
+            }
+
+            .empty-cart-icon {
+                background-image: url(/img/cart-fries.svg);
+                background-position: center;
+                background-size: cover;
+            }
+            
+            .one-cart-icon {
+                background-image: url(/img/one-cart-fries.svg);
+                background-position: center;
+                background-size: cover;
+            }
+
+
+        }
+    }
+
+}

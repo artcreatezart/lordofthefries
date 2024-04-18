@@ -1,0 +1,57 @@
+// base - elements that affect global
+
+// Mixins
+@import 'mixins';
+
+// GLOBAL RESET START
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// GLOBAL RESET END
+
+body {
+    background-color: $background-color;
+}
+
+// Header and Text Variables
+ul {
+    text-decoration: none;
+    li {
+        text-transform: uppercase;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p {
+    font-family: $font-family;
+}
+
+h1 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-size: 1.4em;
+}
+
+h5 {
+    font-size: 1.3em;
+}
+
+h6 {
+    font-size: 0.8em;
+}

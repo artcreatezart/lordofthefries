@@ -1,0 +1,24 @@
+//  CONSISTENT VARIABLES SET
+
+// Mixins
+@import 'mixins';
+
+// Font Variables
+$font-family: "Figtree",
+sans-serif;
+$font-weight-regular: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-extra-bold: 800;
+$font-weight-black: 900;
+
+
+//  Colour Variables
+$primary-color: #FFFFFF;
+$secondary-color: #C4161C;
+$white-overlay-background: rgba(255, 255, 255, 0.7);
+$red-overlay-background: rgba(196, 22, 28, 0.35);
+
+$tertiary-color: #000000;
+$accent-color: #78BC61;
+$background-color: #FFFDFD;

@@ -1,0 +1,27 @@
+// Fonts Partials Start
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+// Fonts Partials End
+
+// Style Partials Start
+
+// Consistent Variables set
+@import 'variables';
+
+// base - elements that affect global
+@import 'base';
+
+// layout - Flex, padding, margin, justify content etc
+@import 'layout';
+
+// module - Resuable items like menu and review cards
+@import 'module';
+
+// State of elements like buttons such as hover, active, focus etc
+@import 'state';
+
+// Styling, colour, font, etc
+@import 'theme';
+// Style Partials End
+
+// Media queires
+@import 'mixins';
